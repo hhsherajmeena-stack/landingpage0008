@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison de Luxe | Bespoke Luxury Home Decor</title>
+    
+    <!-- Open Graph Tags for Social Sharing -->
+    <meta property="og:title" content="Maison de Luxe | Bespoke Luxury Home Decor">
+    <meta property="og:description" content="Apne Ghar Ko Dein Ek Regal aur Royal Touch with Handcrafted Masterpieces.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Meta Pixel Code (Sahi Jagah: Head ke andar) -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1081592937799853');
+    fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        :root {
+            --bg-deep: #080808;
+            --bg-card: #121212;
+            --gold: #d4af37;
+            --gold-light: #f3e5ab;
+            --text-main: #f5f5f5;
+            --text-muted: #a0a0a0;
+            --border-gold: rgba(212, 175, 55, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Header / Hero Section */
+        header {
+            background: linear-gradient(rgba(5, 5, 5, 0.75), rgba(5, 5, 5, 0.85)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=90');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid var(--border-gold);
+        }
+
+        .tagline {
+            font-size: 13px;
+            letter-spacing: 5px;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: 600;
+            background: rgba(212, 175, 55, 0.08);
+            padding: 8px 20px;
+            border-radius: 50px;
+            border: 1px solid var(--border-gold);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(36px, 5vw, 64px);
+            color: #ffffff;
+            margin-bottom: 20px;
+            max-width: 900px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            font-size: clamp(15px, 2vw, 18px);
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            max-width: 650px;
+            font-weight: 300;
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: #ffffff;
+            padding: 20px 45px;
+            font-size: 17px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.45);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            display: inline-flex;
+            align-items: center;
+            gap: 18px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 45px rgba(37, 211, 102, 0.65);
+            background: linear-gradient(135deg, #2ecc71 0%, #25D366 100%);
+        }
+
+        .cta-btn svg {
+            width: 48px;
+            height: 48px;
+            fill: #ffffff;
+            filter: drop-shadow(0 3px 6px rgba(0,0,0,0.35));
+            flex-shrink: 0;
+        }
+
+        /* Trust Bar / Features */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            background-color: var(--bg-card);
+            padding: 50px 5%;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            gap: 30px;
+        }
+
+        .feature-box {
+            padding: 20px;
+            border-right: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .feature-box:last-child {
+            border-right: none;
+        }
+
+        .feature-box h3 {
+            color: var(--gold);
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .feature-box p {
+            font-size: 14px;
+            color: var(--text-muted);
+            font-weight: 300;
+        }
+
+        /* Section Header */
+        .section-title-container {
+            text-align: center;
+            padding: 90px 20px 30px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(28px, 4vw, 42px);
+            color: #ffffff;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .section-subtitle {
+            color: var(--gold);
+            font-size: 14px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        /* Products Grid */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            padding: 20px 5% 90px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-gold);
+            text-align: left;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--gold);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+        }
+
+        .img-container {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .product-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .product-content {
+            padding: 30px;
+        }
+
+        .product-card h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            margin-bottom: 12px;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        .wa-small-btn {
+            background: linear-gradient(135deg, rgba(37, 211, 102, 0.15) 0%, rgba(18, 140, 126, 0.2) 100%);
+            color: #25D366;
+            border: 1px solid #25D366;
+            padding: 14px 24px;
+            font-size: 13px;
+            text-decoration: none;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .wa-small-btn:hover {
+            background: #25D366;
+            color: #000;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .wa-small-btn:hover svg {
+            fill: #000;
+        }
+
+        .wa-small-btn svg {
+            width: 24px;
+            height: 24px;
+            fill: #25D366;
+            transition: fill 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #050505;
+            color: var(--text-muted);
+            font-size: 13px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            font-weight: 300;
+        }
+
+        @media(max-width: 768px) {
+            .features {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .feature-box {
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+                padding-bottom: 25px;
+            }
+            .feature-box:last-child {
+                border-bottom: none;
+            }
+            .cta-btn {
+                padding: 16px 24px;
+                font-size: 14px;
+            }
+            .cta-btn svg {
+                width: 36px;
+                height: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <span class="tagline">✦ Haute Horlogerie & Bespoke Living 2026</span>
+        <h1>Apne Ghar Ko Dein Ek Regal aur Royal Touch</h1>
+        <p>Bespoke handcrafted home decor masterpieces jo aapke living space ki khubsurati ko ek agle hi shahi star par le jayein.</p>
+        <a href="https://wa.me/918955550232?text=Hi,%2520mujhe%2520luxury%2520products%2520buy%2520karna%2520hai,%2520details%2520chahiye." class="cta-btn" target="_blank" onclick="fbq('track', 'Contact');">
+            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            Luxury Products Buy Karne Ke Liye Contact Karein
+        </a>
+    </header>
+
+    <!-- Trust Bar -->
+    <section class="features">
+        <div class="feature-box">
+            <h3>100% Handcrafted</h3>
+            <p>Master artisans dwara bariki se taiyar kiye gaye exclusive pieces</p>
+        </div>
+        <div class="feature-box">
+            <h3>Pan-India Shipping</h3>
+            <p>Harr order par surakshit aur fully insured doorstep delivery</p>
+        </div>
+        <div class="feature-box">
+            <h3>Limited Edition</h3>
+            <p>Rare designs jo aapke ghar ke aesthetic ko banayein behad khaas</p>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <div class="section-title-container">
+        <span class="section-subtitle">Curated Collection</span>
+        <h2 class="section-title">Featured Masterpieces</h2>
+    </div>
+
+    <div class="products">
+        <div class="product-card">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1581783342308-f792dbdd27c5?auto=format&fit=crop&w=800&q=80" alt="Vase">
+            </div>
+            <div class="product-content">
+                <h4>Royal Statement Sculpture</h4>
+                <p>Pure premium finish ke sath hand-carved masterpiece jo aapke drawing room ki jaan ban jaye.</p>
+                <a href="https://wa.me/918955550232?text=Hi,%2520mujhe%2520Royal%2520Statement%2520Sculpture%2520buy%2520karni%2520hai,%2520price%2520aur%2520details%2520chahiye." class="wa-small-btn" target="_blank" onclick="fbq('track', 'Lead');">
+                    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    Inquire on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=800&q=80" alt="Chandelier">
+            </div>
+            <div class="product-content">
+                <h4>Modern Designer Light</h4>
+                <p>Warm ambient lighting jo aapke ghar ke har kone ko ek rich aur sophisticated feel degi.</p>
+                <a href="https://wa.me/918955550232?text=Hi,%2520mujhe%2520Modern%2520Designer%2520Light%2520buy%2520karni%2520hai,%2520price%2520aur%2520details%2520chahiye." class="wa-small-btn" target="_blank" onclick="fbq('track', 'Lead');">
+                    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    Inquire on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80" alt="Wall Art">
+            </div>
+            <div class="product-content">
+                <h4>Luxury Abstract Wall Art</h4>
+                <p>Statement wall piece jo modern aur traditional dono tarah ke luxury interiors ke liye perfect hai.</p>
+                <a href="https://wa.me/918955550232?text=Hi,%2520mujhe%2520Luxury%2520Abstract%2520Wall%2520Art%2520buy%2520karni%2520hai,%2520price%2520aur%2520details%2520chahiye." class="wa-small-btn" target="_blank" onclick="fbq('track', 'Lead');">
+                    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    Inquire on WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Maison de Luxe (Luxury Home Decor). All Rights Reserved. | Direct WhatsApp Concierge: +91 8955550232</p>
+    </footer>
+
+</body>
+</html>
